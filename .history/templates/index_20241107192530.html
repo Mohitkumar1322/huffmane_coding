@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>Huffman Encoding</title>
+</head>
+<body>
+    <h2>Huffman coding is an efficient algorithm for data compression, reducing file sizes by encoding frequently used
+         characters with shorter binary codes and infrequent ones with longer codes. This method uses a binary tree to represent 
+         characters, minimizing redundancy. It's widely used in applications like ZIP compression and multimedia file storage.</h2>
+    <h1>Huffman Encoding Compression Made By Mohit Kumar</h1>
+    <form action="/compress" method="POST" enctype="multipart/form-data">
+        <label for="file">Upload File:</label>
+        <input type="file" name="file" required>
+        <button type="submit">Compress</button>
+    </form>
+</body>
+</html>
+
